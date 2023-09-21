@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TeacherApplication</string>
+    <string name="test_btn">SecondActivity</string>
+    <string name="increment_button">IncrementButton</string>
+    <string name="simple_fragment">Simple fragment</string>
+    <string name="login">Login</string>
+</resources>
