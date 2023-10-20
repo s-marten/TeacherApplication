@@ -13,7 +13,7 @@ class ProgressActivity : AppCompatActivity() {
 
     private var progress: Int = 0
 
-    private val progressThread = Runnable {
+    private val progressRunnable = Runnable {
         while (progress < 100) {
             handler.sendMessage(handler.obtainMessage())
             Thread.sleep(1000)
@@ -27,13 +27,12 @@ class ProgressActivity : AppCompatActivity() {
         }
     }
 
-    private val thread = Thread(progressThread)
+    private val thread = Thread(progressRunnable)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProgressBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.btnStart.setOnClickListener {
             progress = 0
             thread.start()
