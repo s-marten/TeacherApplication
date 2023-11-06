@@ -12,7 +12,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeacherApplication"
-        tools:targetApi="31">
+        android:name=".MyApplication"
+        tools:targetApi="34">
+        <activity
+            android:name=".view.SaveDataActivity"
+            android:exported="false" />
         <activity
             android:name=".ProgressActivity"
             android:exported="false" />

@@ -4,4 +4,11 @@
     <string name="increment_button">IncrementButton</string>
     <string name="simple_fragment">Simple fragment</string>
     <string name="login">Login</string>
+    <string name="save_to_prefs">save to Prefs</string>
+    <string name="save_to_store">save to Store</string>
+    <string name="save_to_db">save to Db</string>
+    <string name="read_from_prefs">read from prefs</string>
+    <string name="read_from_store">read from store</string>
+    <string name="read_from_db">read from db</string>
+    <string name="save_data">Save Data</string>
 </resources>

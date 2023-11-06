@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import ru.marten.teacherapplication.databinding.ActivityMainBinding
 import ru.marten.teacherapplication.view.LoginActivity
+import ru.marten.teacherapplication.view.SaveDataActivity
 import ru.marten.teacherapplication.view.SecondActivity
 
 class MainActivity : BaseActivity(MainActivity::class.java.name) {
@@ -41,6 +42,10 @@ class MainActivity : BaseActivity(MainActivity::class.java.name) {
 
         binding.btnProgress.setOnClickListener {
             startActivity(Intent(this, ProgressActivity::class.java))
+        }
+
+        binding.btnSaveData.setOnClickListener {
+            startActivity(Intent(this, SaveDataActivity::class.java))
         }
     }
 
